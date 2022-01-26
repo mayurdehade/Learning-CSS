@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .title{
+            color: rgb(0, 138, 252);
+        }
+        #header{
+            background-color: darkturquoise;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 20px;
+        }
+        .container{
+            border: 2px solid gold;
+            color: rgb(0, 138, 252);
+            font-size: large;
+        }
+
+        /*1. simple structure of flexbox*/
+        #flex-cont{
+            background-color: indianred;
+            display: flex;
+        }
+        .flex-child{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /*2. flex-direction*/
+        #flex-cont2{
+            background-color: indianred;
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+        .flex-child2{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /*3. flex-wrap*/
+        #flex-cont3{
+            background-color: indianred;
+            display: flex;
+            flex-wrap: wrap-reverse;
+
+        }
+        .flex-child3{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /*4. flex-flow*/
+        #flex-cont4{
+            background-color: indianred;
+            display: flex;
+            flex-flow: direction wrap;
+            flex-flow: row wrap;
+
+        }
+        .flex-child4{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /*5. justify-content*/
+        #flex-cont5{
+            background-color: indianred;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        .flex-child5{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /*6. align-items*/
+        #flex-cont6{
+            background-color: indianred;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            height: 400px;
+            align-items: flex-end;
+        }
+        .flex-child6{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /*7. align-content*/
+        #flex-cont7{
+            background-color: indianred;
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-items: stretch;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .flex-child7{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+        
+        /*8. For horizontal and vertical alignment center*/
+        #flex-cont8{
+            background-color: indianred;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 400px;
+            align-items: stretch;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .flex-child8{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /*9. Order property for child flex*/
+        #flex-cont9{
+            background-color: indianred;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 400px;
+            align-items: stretch;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .flex-child9{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+        }
+        #one{
+            order: 2;
+        }
+        #two{
+            order: 3;
+        }
+        #three{
+            order: 1;
+        }
+
+        /*10. Flex-grow for child flex*/
+        #flex-cont10{
+            background-color: indianred;
+            display: flex;
+        }
+        .flex-child10{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+        }
+        #one1{
+            order: 1;
+        }
+        #two2{
+            order: 3;
+        }
+        #three3{
+            order: 2;
+        }
+
+        /*11. Flex-shrink for free up space*/
+        #flex-cont11{
+            background-color: indianred;
+            display: flex;
+        }
+        .flex-child11{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        #one01{
+            flex-shrink: 3;
+        }
+        #two02{
+            flex-shrink: 2;
+        }
+        #three03{
+            flex-shrink: 1;
+        }
+
+        /*12. Flex-basis*/
+        #flex-cont12{
+            background-color: indianred;
+            display: flex;
+        }
+        .flex-child12{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+        }
+        #one-1{
+            flex-basis: 300px;
+        }
+        #two-2{
+            flex-basis: 200px;
+        }
+        #three-3{
+            flex-basis: 500px;
+        }
+
+        /*13. Align-self*/
+        #flex-cont13{
+            background-color: indianred;
+            display: flex;
+            height: 400px;
+        }
+        .flex-child13{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+        }
+        #one-01{
+            align-self: flex-start;
+        }
+        #two-02{
+            align-self: center;
+        }
+        #three-03{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Flex Box</h1>
+    <div class="container">
+        <ul>
+            <li>Block, for sections in a webpage</li>
+            <li>Inline, for text</li>
+            <li>Table, for two-dimensional table data</li>
+            <li>Positioned, for explicit position of an element</li>
+            <li>The Flexible Box Layout Module, makes it easier to design flexible 
+                responsive layout structure without using float or positioning.
+                </li>
+        </ul>
+    </div>
+    <br>
+    <h2 class="title">1. Simple structure of flexbox</h2>
+    <div id="flex-cont">
+        <div class="flex-child">Simple</div>
+        <div class="flex-child">Structure</div>
+        <div class="flex-child">Of</div>
+        <div class="flex-child">Flexbox</div>
+    </div>
+    <br>
+
+    <h2 class="title">2. Flex-direction</h2>
+    <div id="flex-cont2">
+        <div class="flex-child2">column-reverse</div>
+        <div class="flex-child2">Structure</div>
+        <div class="flex-child2">Of</div>
+        <div class="flex-child2">Flexbox</div>
+    </div>
+    <br>
+
+    <h2 class="title">3. Flex-wrap</h2>
+    <div id="flex-cont3">
+        <div class="flex-child3">One</div>
+        <div class="flex-child3">Two</div>
+        <div class="flex-child3">Three</div>
+        <div class="flex-child3">Four</div>
+        <div class="flex-child3">Five</div>
+        <div class="flex-child3">Six</div>
+        <div class="flex-child3">Seven</div>
+        <div class="flex-child3">Eight</div>
+    </div>
+    <br>
+
+    <h2 class="title">4. Flex-flow</h2>
+    <div id="flex-cont4">
+        <div class="flex-child4">One</div>
+        <div class="flex-child4">Two</div>
+        <div class="flex-child4">Three</div>
+        <div class="flex-child4">Four</div>
+        <div class="flex-child4">Five</div>
+        <div class="flex-child4">Six</div>
+        <div class="flex-child4">Seven</div>
+        <div class="flex-child4">Eight</div>
+    </div>
+    <br>
+
+    <h2 class="title">5. Justify-content</h2>
+    <div id="flex-cont5">
+        <div class="flex-child5">One</div>
+        <div class="flex-child5">Two</div>
+        <div class="flex-child5">Three</div>
+    </div>
+    <br>
+
+    <h2 class="title">6. Align-items</h2>
+    <div id="flex-cont6">
+        <div class="flex-child6">One</div>
+        <div class="flex-child6">Two</div>
+        <div class="flex-child6">Three</div>
+    </div>
+    <br>
+
+    <h2 class="title">7. Align-content</h2>
+    <div id="flex-cont7">
+        <div class="flex-child7">One</div>
+        <div class="flex-child7">Two</div>
+        <div class="flex-child7">Three</div>
+        <div class="flex-child7">Four</div>
+        <div class="flex-child7">Five</div>
+        <div class="flex-child7">Six</div>
+        <div class="flex-child7">Seven</div>
+        <div class="flex-child7">Eight</div>
+    </div>
+    <br>
+
+    <h2 class="title">8. For horizontal and vertical alignment center</h2>
+    <div id="flex-cont8">
+        <div class="flex-child8">One</div>
+    </div>
+
+    <h3 class="title">9. Order property for child flex</h3>
+    <div id="flex-cont9">
+        <div class="flex-child9" id="one">One</div>
+        <div class="flex-child9" id="two">Two</div>
+        <div class="flex-child9" id="three">Three</div>
+    </div>
+
+    <h3 class="title">10. Flex-grow for child flex</h3>
+    <div id="flex-cont10">
+        <div class="flex-child10" id="one1">One</div>
+        <div class="flex-child10" id="two2">Two</div>
+        <div class="flex-child10" id="three3">Three</div>
+    </div>
+
+    <h3 class="title">11. Flex-grow for child flex</h3>
+    <div id="flex-cont11">
+        <div class="flex-child11" id="one01">One</div>
+        <div class="flex-child11" id="two02">Two</div>
+        <div class="flex-child11" id="three03">Three</div>
+        <div class="flex-child11">Four</div>
+        <div class="flex-child11">Five</div>
+        <div class="flex-child11">Six</div>
+    </div>
+
+    <h3 class="title">12. Flex-basis</h3>
+    <div id="flex-cont12">
+        <div class="flex-child12" id="one-1">One</div>
+        <div class="flex-child12" id="two-2">Two</div>
+        <div class="flex-child12" id="three-3">Three</div>
+    </div>
+
+    <h3 class="title">13. Align-self</h3>
+    <div id="flex-cont13">
+        <div class="flex-child13" id="one-01">One</div>
+        <div class="flex-child13" id="two-02">Two</div>
+        <div class="flex-child13" id="three-03">Three</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comments and Selectors</title>
+    <style>
+        /*1.Element Selector*/
+        h3 span{
+            color: orange;
+        }
+        /*2.Class Selector*/
+        .class_select{
+            color: blue;
+        }
+        /*3.Id Selector*/
+        #id_select{
+            color: green;
+        }
+
+        /*Root Selector Function*/
+        :root{
+            --primary: rgb(0, 80, 112);
+            --secondary: rgb(224, 174, 8);
+        }
+
+        /*selecting element by class name*/
+        .root-primary{
+            color: var(--primary);
+        }
+
+        .root-secondary{
+            color: var(--secondary);
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Selectors in CSS</h2>
+    <h3><span>1.Element Selector</span></h3>
+    <h3 class="class_select">2.Class Selector</h3>
+    <h3 id="id_select">3.Id Selector</h3>
+
+    <br>
+
+    <div>
+        <h2 class="root-primary">Root Selector Function</h2>
+        <p class="root-primary">:root selector function is use for declare global css variables which can we use for defining any style property.
+            <br>By using global variables we can change major propertes of website with changing only one value not need to change for all places.
+        </p>
+        <pre class="root-secondary"><b>
+            Syntax:
+
+            :root{
+                --primary: any value (ex.red, blue, 15px);
+                --secondary: value2;
+            }
+        </b></pre>
+    </div>
+
+    <div>
+        <h2 class="root-primary">Comment in CSS</h2>
+        <pre class="root-secondary"><b>
+            Syntax:
+
+            /* This is Comment */
+        </b></pre>
+    </div>
+</body>
+</html>

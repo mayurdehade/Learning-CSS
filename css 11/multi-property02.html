@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+        .gradients{
+            border: 3px solid deepskyblue;
+            color: dodgerblue;
+            margin: 10px;
+            padding: 20px;
+            width: auto;
+            text-align: center;
+        }
+        .linear{
+            border: 3px solid deepskyblue;
+            color: deepskyblue;
+            margin: 10px;
+            padding: 20px;
+            width: auto;
+            height: 200px;
+            text-align: center;
+            background: linear-gradient(red, blue);
+            
+        }
+        .linear h3{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -200%);
+            font-size: 30px;
+        }
+
+        .radial{
+            border: 3px solid deepskyblue;
+            color: deepskyblue;
+            margin: 10px;
+            padding: 20px;
+            width: auto;
+            height: 200px;
+            text-align: center;
+            background: radial-gradient(red, blue);
+            
+        }
+        .radial h3{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, 550%);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradients">
+        <h2>Two types of Gradients:</h2>
+        <h3>1. Linear Gradients</h3>
+        <h3>2. Radial Gradients</h3>
+    </div>
+
+    <div class="linear">
+        <h3>Linear Gradients</h3>
+    </div>
+
+    <div class="radial">
+        <h3>Radial Gradients</h3>
+    </div>
+</body>
+</html>

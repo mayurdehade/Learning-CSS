@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min-Max Height and Width</title>
+    <style>
+        .header{
+            color: royalblue;
+            background-color: sandybrown;
+            text-align: center;
+            width: 100%;
+        }
+        hr{
+            /* border: 2px dotted burlywood; */
+            border-width: 5px 0 0 0;
+            border-style: dotted;
+            border-color: burlywood;
+            width: 50px;
+            
+        }
+        #min-height{
+            background-color: slategray;
+            width: 100%;
+            min-height: 100px;
+            height: 10px;
+        }
+        #max-height{
+            background-color: crimson;
+            width: 100%;
+            max-height: 50px;
+            height: 500px;
+        }
+        #min-width{
+            background-color: darkgoldenrod;
+            height: auto;
+            min-width: 300px;
+            width: 20px;
+        }
+        #max-width{
+            background-color: darkkhaki;
+            height: auto;
+            max-width: 200px;
+            width: 500px;
+        }
+        .end{
+            color: white;
+            background-color: black;
+            width: 100%;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Min-Max Height and Width</h1>
+        <p id="min-height">1. Min-height: if containt is less then also height at list min-height. and if containt is increase height is going to increase. </p>
+        <hr>
+        <p id="max-height">2. Max-height: If the containt increase then the max-height is fixed dont increase the height.
+        </p>
+        <hr>
+        <p id="min-width">3. Min-Width: similar like min-height</p>
+        <hr>
+        <p id="max-width">4. Max-Width: similar like max-height</p>
+        <h2 class="end">End</h2>
+    </div>
+</body>
+</html>

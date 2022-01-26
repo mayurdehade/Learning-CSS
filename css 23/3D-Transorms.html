@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transformation</title>
+    <style>
+        #header{
+            background-color: darkturquoise;
+            text-align: center;
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+        #cover{
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+        }
+
+        /*Rotate 3D*/
+        #content1{
+            height: 200px;
+            width: 200px;
+            background-color: darkturquoise;
+            /* perspective: distance of watching (deep); */
+            /* totate: x-axis, y-axis, z-axis, angle */
+            transform: perspective(300px) rotate3d(0, 50, 50, 30deg);
+        }
+
+        /*translate 3D*/
+        #content2{
+            height: 200px;
+            width: 200px;
+            background-color: darkturquoise;
+            transform: perspective(300px) translate3d(50px, 50px, -50px);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="header">3D Transformation</h1>
+
+    <div id="cover">
+        <div id="content1">Rotate 3D</div>
+    </div>
+
+    <div id="cover">
+        <div id="content2">Translate 3D</div>
+    </div>
+</body>
+</html>

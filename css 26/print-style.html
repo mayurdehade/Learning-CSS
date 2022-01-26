@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Style</title>
+    <style>
+        #header{
+            background-color: turquoise;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid red;
+        }
+        @media screen{
+            #print p{
+                font-size: 20px;
+            }
+            #print img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+        @media print{
+            #print p{
+                font-size: 30px;
+            }
+            #print img{
+                display: none;
+            }
+            #print{
+                width: 15%;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Print Style</h1>
+    <div id="print">
+        <img src="../Images/6.jpg" alt="">
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quis sint optio nostrum sed necessitatibus eos. A sint sapiente facere tenetur vero fugit accusamus ipsum officia, alias, velit obcaecati eveniet est porro eius repellendus odio dolores rem? Libero cum ex maiores dolore alias? Quo nam, obcaecati voluptatem, qui quae at repellendus voluptates harum corporis sunt nemo quod accusamus magnam dignissimos cumque natus dicta tenetur voluptate quidem veritatis ad! Numquam necessitatibus architecto accusamus at. Voluptatibus quibusdam ratione quo quae placeat veritatis vitae assumenda molestiae, ipsum minus consequuntur minima porro suscipit sunt repudiandae sed iure modi enim maiores ipsam tempora aut reiciendis!</p>
+    </div>
+</body>
+</html>

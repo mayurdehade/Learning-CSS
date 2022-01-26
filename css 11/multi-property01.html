@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cursor</title>
+    <style>
+        h1{
+            background-color: gold;
+            font-family: sans-serif;
+            border: 2px solid burlywood;
+            color: rgb(36, 36, 36);
+            text-align: center;
+        }
+        .hover button{
+            height: 50px;
+            width: 200px;
+            border-radius: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .hover button:hover{
+            color: white;
+            background-color: orangered;
+        }
+        .hover{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            border: 5px solid black;
+            height: 150px;
+            width: 300px;
+            margin: 20px auto;
+            /* outside shadow */
+            box-shadow: 10px 10px 10px 5px rgb(77, 75, 75);
+        }
+        .box2{
+            border: 5px solid black;
+            height: 150px;
+            width: 300px;
+            margin: 20px auto;
+            /* inside shadow */
+            box-shadow: 10px 10px 10px 5px rgb(77, 75, 75) inset;
+        }
+        .container{
+            width: 100%;
+        }
+        .opacity{
+            border: 1px solid red;
+            width: 500px;
+            height: 150px;
+            background-color: yellow;
+            margin: 50px auto;
+            padding: 20px;
+            font-size: 30px;
+            opacity: 0.5;
+        }
+        .filter{
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .filter img{
+            height: auto;
+            width: 50%;
+            border: 4px solid black;
+            filter: brightness(80%) blur(2px) hue-rotate(30deg);
+            display: inline;
+        }
+        .filter p{
+            display: inline-block;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 3vh;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Cursor</h1>
+
+    <h2 class="hover">
+        <button>Hover Me</button>
+    </h2>
+    <br>
+    
+    <div class="container">
+        <h2 class="box">Box Shadow outside</h2>
+
+        <h2 class="box2">Box Shadow inside</h2>
+    </div>
+
+    <div class="opacity">
+        Opacity
+    </div>
+
+    <div class="filter">
+        <img src="../Images/2.jpg" alt="">
+        <p>filter: brightness(80%) blur(2px) hue-rotate(30deg);</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System - Project</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header{
+            background-color: indianred;
+            border: 5px solid rgb(0, 204, 255);
+            border-radius: 20px;
+            text-align: center;
+            color: wheat;
+
+        }
+        .grid-container{
+            background-color: indianred;
+            padding: 10px;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-areas: 'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+        }
+        .grid-item{
+            background-color: wheat;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #grid-1{
+            grid-area: header;
+        }
+        #grid-2{
+            grid-area: menu;
+        }
+        #grid-3{
+            grid-area: main;
+        }
+        #grid-4{
+            grid-area: right;
+        }
+        #grid-5{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Grid System Project</h1>
+    <div class="grid-container">
+        <div class="grid-item" id="grid-1">Header</div>
+        <div class="grid-item" id="grid-2">Menu</div>
+        <div class="grid-item" id="grid-3">Main</div>
+        <div class="grid-item" id="grid-4">Right</div>
+        <div class="grid-item" id="grid-5">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .heading{
+            background-color: rgb(36, 31, 25);
+            color: cyan;
+            text-align: center;
+        }
+        .img{
+            padding: 10px;
+            width: 50px;
+            height: auto;
+        }
+        #img1{
+            float: right;
+        }
+        #img2{
+            float: left;
+        }
+
+        .list{
+            background: gray;
+            list-style-type: none;
+            overflow: auto;
+            padding: 20px;
+        }
+        .item{
+            color: white;
+            padding: 10px 15px;
+            float: right;
+        }
+        .img3{
+            width: 200px;
+            height: 300px;
+            float: right;
+        }
+        .img4{
+            width: 200px;
+            height: 300px;
+            float: right;
+            clear: right;
+        }
+        .para{
+            border: 2px solid blue;
+            overflow: auto;
+            
+        }
+        #container{
+            border: 2px solid skyblue;
+        }
+        .content{
+            width: 70%;
+            background-color: gray;
+            height: 200px;
+            float: left;
+        }
+        .sidebar{
+            width: 30%;
+            background-color: blue;
+            height: 150px;
+            float: left;
+        }
+        .footer{
+            background-color: yellowgreen;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Float and Clear</h1>
+    <p><img class="img" id="img2" src="../Images/list icon 1.png" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore quasi beatae magnam corporis facilis sed minima provident a expedita ab obcaecati quae eaque illum suscipit alias, sunt repellat voluptas fugiat, dignissimos nemo consequatur quis. Molestiae voluptatum, quae ipsa assumenda nulla impedit porro dicta. Illo eaque ratione saepe ducimus, omnis, porro asperiores sit <img class="img" id="img2" src="../Images/list icon 1.png" alt="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quisquam assumenda expedita ex praesentium ab minus eius nesciunt ipsa explicabo. Facere a repudiandae magni nihil adipisci necessitatibus excepturi sequi deserunt nam illum ex doloremque, ratione distinctio reiciendis asperiores laboriosam? Ratione at fugiat officia, quia consectetur, aut aperiam </p>
+
+    <br>
+    <h3 class="heading">Float</h3>
+    <ul class="list">
+        <li class="item">Home</li>
+        <li class="item">About Us</li>
+        <li class="item">Team</li>
+        <li class="item">Contact</li>
+        <li class="item">Donate</li>
+    </ul>
+
+    <br>
+    <h3 class="heading">Clear</h3>
+    <p class="para"><img class="img3" src="../Images/3.jpg" alt=""><img class="img4" src="../Images/8.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam nemo non, qui distinctio eaque modi fuga facilis delectus illo quidem animi numquam dolores, accusantium ab quasi voluptate, necessitatibus sunt ad culpa doloremque. Quae necessitatibus sunt, dolore quia autem amet qui ipsam, alias possimus in assumenda magni ullam molestias commodi ratione expedita non sint. Fuga maiores a minus quo repellendus quia voluptates, repudiandae soluta distinctio voluptas ratione, iusto dolorem culpa pariatur quidem. Quas aliquid consequatur accusantium nulla eligendi. Excepturi a facilis atque veritatis ad tenetur nobis nam, quod velit asperiores esse id eius incidunt error, numquam veniam laudantium. Quo, nobis.</p>
+    <br>
+
+    <div id="container">
+        <div class="content">
+            <p>content</p>
+        </div>
+        <div class="sidebar">
+            <p>sidebar</p>
+        </div>
+        <div class="footer">
+            <p>footer</p>
+        </div>
+    </div>
+</body>
+</html>

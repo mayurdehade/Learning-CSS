@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        *{
+            font-family: cursive;
+        }
+        #header{
+            background-color: darkturquoise;
+            text-align: center;
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+        div{
+            display: inline-block;
+            margin: 30px;
+        }
+        @keyframes changecolor{
+            /*for animation import keyframes and give a name ex.
+            @keyframes name{
+
+            }*/
+            /*form{starting} to {ending}*/
+            from {background-color: red;}
+            to {background-color: blue;}
+        }
+        #from-to{
+            width: 200px;
+            height: 200px;
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            background-color: red;
+            animation-name: changecolor;
+            animation-duration: 10s;
+        }
+
+        /*Percentage*/
+        @keyframes changecolor-percent{
+            0% {background-color: red;}
+            25% {background-color: orange;}
+            50% {background-color: yellow;}
+            75% {background-color: lightblue;}
+            100% {background-color: blue;}
+        }
+        @keyframes changecolor-percent2{
+            0% {background-color: red;}
+            25% {width: 300px;}
+            50% {background-color: yellow;}
+            75% {width: 200px;}
+            100% {background-color: blue;}
+        }
+        #percentage{
+            width: 200px;
+            height: 200px;
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            background-color: red;
+            animation-name: changecolor-percent;
+            animation-duration: 10s;
+        }
+
+        /*Percentage 2*/
+        #percentage2{
+            width: 200px;
+            height: 200px;
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            background-color: red;
+            animation-name: changecolor-percent2;
+            animation-duration: 10s;
+        }
+
+        /*animation-delay*/
+        @keyframes changecolor-new{
+            0% {background-color: red;}
+            25% {width: 300px;}
+            50% {background-color: yellow}
+            75% {width: 200px;}
+            100% {background-color: blue;}
+        }
+        #animation-delay{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            background-color: red;
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            animation-name: changecolor-new;
+            animation-delay: 2s;
+            animation-duration: 8s;
+        }
+
+        /*animation-iteration-count*/
+        #animation-iteration{
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            background-color: red;
+            animation-name: changecolor-new;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        /*animation-direction*/
+        #animation-direction{
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            background-color: red;
+            animation-name: changecolor-new;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        
+        /*animation-timing-function*/
+        #animation-timing-function{
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            background-color: red;
+            animation-name: changecolor-new;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        /*border-radius*/
+        @keyframes bordercolor{
+            0% {background-color: red; border-radius: 0%;}
+            10% {background-color: yellow; border-radius: 10%;}
+            20% {background-color: orange; border-radius: 20%;}
+            30% {background-color: green; border-radius: 30%;}
+            40% {background-color: brown; border-radius: 40%;}
+            50% {background-color: red; border-radius: 50%;}
+            60% {background-color: lightblue; border-radius: 60%;}
+            70% {background-color: green; border-radius: 70%;}
+            80% {background-color: olive; border-radius: 80%;}
+            90% {background-color: gray; border-radius: 90%;}
+            100% {background-color: black; border-radius: 100%;}
+        }
+        #border-radius{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            color: white;
+            padding: 40px;
+            font-size: x-large;
+            background-color: red;
+            animation-name: bordercolor;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">CSS Animation</h1>
+    <div id="from-to">from-to</div>
+
+    <div id="percentage">Percentage</div>
+
+    <div id="percentage2">Percentage width change</div>
+
+    <br>
+
+    <div id="animation-delay">animation-delay</div>
+
+    <br>
+
+    <div id="animation-iteration">animation-iteration-count - infinite</div>
+
+    <br>
+
+    <div id="animation-direction">animation-direction</div>
+
+    <br>
+
+    <div id="animation-timing-function">animation-timing-function</div>
+
+    <br>
+
+    <div id="border-radius">border-radius</div>
+
+</body>
+</html>

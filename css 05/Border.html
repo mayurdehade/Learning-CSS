@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Styles</title>
+    <style>
+        #header{
+            width: 100%;
+            text-align: center;
+            background-color: burlywood;
+        }
+        .bstyles ul{
+            margin-left: 30%;
+            color: blue;
+        }
+        .inset{
+            border: 10px solid rgb(79, 156, 28);
+            border-style: inset;
+            text-align: center;
+        }
+        .outset{
+            border: 10px solid red;
+            border-style: outset;
+            text-align: center;
+        }
+        .multi-border{
+            height: 80px;
+            border: 10px solid blue;
+            border-style: solid dashed dotted double;
+            text-align: center;
+        }
+        .multi-color{
+            height: 40px;
+            border-width: 5px;
+            border-style: dashed;
+            border-color: red blue orange yellow;
+        }
+        .border-radius{
+            border: 5px solid royalblue;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            margin: 0 29.69% 0 29.69%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="border">
+        <h1 id="header">Borders Styles</h1>
+        <div class="bstyles">
+           <h2>1. Border styles:</h2>
+            <font size="5">
+                <ul>
+                    <li>dotted</li>
+                    <li>dashed</li>
+                    <li>solid</li>
+                    <li>double</li>
+                    <li>groove</li>
+                    <li>ridge</li>
+                    <li>inset</li>
+                    <li>outset</li>
+                    <li>none</li>
+                    <li>hidden</li>
+                </ul>
+            </font>
+        </div>
+
+        <hr style="border: 3px 0 0 0; border-color: red;">
+
+        <h3 class="inset">Border-style: inset;</h3>
+        <h3 class="outset">border-style: outset;</h3>
+        <h3 class="multi-border">Multiple border styles: border-style: solid dashed dotted double;</h3>
+        <h3 class="multi-color">Multiple color border: border-color: red blue orange yellow;</h3>
+        <div class="center">
+        <h3 class="border-radius">border-radius: 10px;</h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #header{
+            background-color: turquoise;
+            border: 1px solid red;
+            text-align: center;
+            border-radius: 20px;
+            color: yellow;
+        }
+        h3{
+            color: turquoise;
+        }
+        pre{
+            color: red;
+        }
+        #div1{
+            width: 70%;
+            height: 100px;
+            text-align: center;
+            float: left;
+            background-color: orange;
+        }
+        #div2{
+            width: 30%;
+            height: 100px;
+            text-align: center;
+            float: left;
+            background-color: rosybrown;
+        }
+
+        /*set width for change width and height of element*/
+        @media screen and (min-width: 1300px){
+            #div1{
+                width: 50%;
+                background-color: red;
+                color: blue;
+            }
+            #div2{
+                width: 50%;
+                background-color: blue;
+                color: red;
+            }
+        }
+
+        @media screen and (max-width: 736px){
+            #div1{
+                width: 50%;
+                background-color: darkturquoise;
+                color: deeppink;
+            }
+            #div2{
+                width: 50%;
+                background-color: deeppink;
+                color: darkturquoise;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Responsive Web Design</h1>
+    <h3>1. Viewport meta tag for responsive website</h3>
+    <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
+    <br>
+    <h3>2. Media Queries</h3>
+    <div id="div1">Div 1</div>
+    <div id="div2">Div 2</div>
+</body>
+</html>

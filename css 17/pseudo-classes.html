@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+    <style>
+        /*last and first element style */
+        #ul li:last-child{
+            color: red;
+        }
+        /*last and first child for last and first style*/
+        #ul li:nth-child(3){
+            color: rgb(105, 212, 5);
+        }
+        /*odd even element*/
+        p:nth-child(even){
+            color: darkturquoise;
+        }
+        p:nth-child(odd){
+            color: orange;
+        }
+        /*nth-last-child()*/
+        #ul li:nth-last-child(2){
+            color: rgb(23, 82, 138);
+        }
+
+        /*pattern*/
+        #ol li:nth-child(3n){
+            color: springgreen;
+        }
+
+        /*focus*/
+        #in:focus{
+            border: 5px solid rgb(26, 123, 250);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <p>This is a p tag 1</p>
+    <p>This is a p tag 2</p>
+    <p>This is a p tag 3</p>
+    <p>This is a p tag 4</p>
+    <p>This is a p tag 5</p>
+    <p>This is a p tag 6</p>
+
+    <ul id="ul">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ul>
+
+    <ol id="ol">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ol>
+    <br>
+
+    <form action="">
+        <label for="">Focus</label>
+        <input type="text" id="in">
+    </form>
+</body>
+</html>

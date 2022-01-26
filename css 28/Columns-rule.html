@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns Rule</title>
+    <style>
+        #header{
+            background-color: darkturquoise;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 20px;
+            padding: 4px;
+        }
+        .container{
+            /*for dividing content in columns */
+            column-count: 3;
+
+            /*line between two columns */
+            column-rule-style: solid;
+
+            /*line width */
+            column-rule-width: 2px;
+
+            /*color*/
+            column-rule-color: red;
+
+            /*for shortcut column-rule*/
+            /*column-rule: 1px slid red;*/
+
+            column-width: 300px;
+        }
+        .title{
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Columns Rule</h1>
+    <div class="container">
+        <h1 class="title">The brief, bright streaks of light in the night sky are known as meteors.</h1> Those that fall all the way to the ground are called meteorites. Meteorites can be divided into three broad categories iron, stony-iron and stony. Iron meteorites are mostly made of metals nickel and iron. They are not very common. Nearly 50,000 years ago, an iron meteorite, Canyon Diablo, which created a crater nearly a mile wide and 6 feet deep, known as Meteor Crater, was found in Arizona. Stony-iron meteorites rarely land on or planet. They are made of iron nickel alloy mixed with nonmetallic matter similar to the outer layers of the earth. Such a meteorite weighing more than one and a half tons was found in Huckitta. Australia in 1920. There ae three subtypes of stony meteorites. The first is the chondrites are another rare type of stony meteorites. Carbonaceous famous of these fell in Murchison, Australia in 1969. It contains evidence that life on earth did not begin here. The last type, the anchondrites are also rare. Scientists say that such matter was once part of Mars and our own moon. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit nostrum, quibusdam temporibus provident ipsa pariatur deleniti voluptate aperiam veniam corrupti excepturi ut harum animi facere ab dolor iure ducimus praesentium velit molestias. Error minus illum vitae voluptates eos, temporibus tempore, quibusdam maiores laborum culpa perferendis dolorem expedita totam ipsa cumque. Quidem sit soluta iusto libero, fugiat dignissimos voluptatum quae quaerat iure eveniet autem illum necessitatibus ducimus cum deleniti recusandae natus commodi. Sed, id aut. Sapiente deleniti modi adipisci nisi quisquam, facilis mollitia illum assumenda perferendis suscipit quaerat est quam architecto officia error eligendi, nesciunt doloremque possimus quia, eveniet aspernatur!
+    </div>
+</body>
+</html>

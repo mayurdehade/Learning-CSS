@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        .header{
+            background-color: yellow;
+            color: blue;
+            font-family: cursive;
+            text-align: center;
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+        .info{
+            font-size: x-large;
+            margin: 20px 35px;
+            text-align: justify;
+            color: royalblue;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .display{
+            border: 2px solid red;
+            width: 300px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+        .hide{
+            display: none;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Display Properties</h1>
+    <pre class="info">
+➢ Block Element- Starts on a new line and takes up the full
+width available (stretches out to the left and right as far as
+it can). Height and width applied. ex. div, p, h1, form.
+➢ Inline Element- Does not start on a new line and only takes 
+up as much width as necessary. Height and width not applied. 
+ex. a, img, span.
+➢ Inline-block- Does not start on a new line and only takes up 
+as much width as necessary. Height and width not applied.
+    </pre>
+
+    <div class="display">Display: inline-block</div>
+    <div class="display">Display: inline-block</div>
+
+    <div class="hide">Hiddent Element</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styles</title>
+    <style>
+        tr th{
+            font-size: 25px;
+        }
+        table{
+            border: 1px solid black;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, -200%);
+            border-collapse: collapse;
+            border-spacing: 15px 15px;
+            background-color: rgb(99, 227, 230);
+        }
+        tr{
+            border: 0px solid black;
+        }
+        caption{
+            caption-side: top;
+            background-color: coral;
+        }
+        th{
+            border: 2px solid black;
+            height: 30px;
+            padding: 5px;
+            text-align: right;
+        }
+        td{
+            border: 2px solid black;
+            height: 40px;
+            vertical-align: middle;
+        }
+        pre{
+            font-size: large;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <table border="3px">
+        <caption style="font-size: 30px; font-weight: bold;">Table Styles</caption>
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+        </tr>
+        <tr>
+            <td>Content 1</td>
+            <td>Content 2</td>
+            <td>Content 3</td>
+        </tr>
+        <tr>
+            <td>Content 4</td>
+            <td>Content 5</td>
+            <td>Contnet 6</td>
+        </tr>
+    </table>
+    <br><br>
+    <pre>
+        tr th{
+            font-size: 25px;
+        }
+        table{
+            border: 1px solid black;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -200%);
+            border-collapse: collapse;
+            border-spacing: 15px 15px;
+            background-color: rgb(99, 227, 230);
+        }
+        tr{
+            border: 0px solid black;
+        }
+        caption{
+            caption-side: top;
+            background-color: coral;
+        }
+        th{
+            border: 2px solid black;
+            height: 30px;
+            padding: 5px;
+            text-align: right;
+        }
+        td{
+            border: 2px solid black;
+            height: 40px;
+            vertical-align: middle;
+        }
+    </pre>
+</body>
+</html>

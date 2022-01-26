@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Propertes in CSS</title>
+
+    <style>
+        dl dt, dd{
+            font-size: large;
+        }
+
+        :root{
+            --dt-color: rgb(252, 187, 9);
+            --dd-color: rgb(153, 0, 255);
+        }
+
+        .discription{
+            color: var(--dd-color);
+            font-style: italic;
+        }
+        .head{
+            color: var(--dt-color);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CSS Color Propertes</h1>
+        <h3>CSS color can be specified as</h3>
+        <dl>
+            <dt class="head">1.Predefined color names</dt>
+                <dd class="discription">Choose color by names different 140 color names available in morder browser.</dd>
+            <dt class="head">2.RGB</dt>
+                <dd class="discription"> rgb(red, green, blue) | colour value between 0 and 255 | Black: rgb(0, 0, 0) | White: rgb(255, 255, 255) | Red: rgb(255, 0, 0) | Green: rgb(0, 255, 0) | Blue: rgb(0, 0, 255)</dd>
+            <dt class="head">3.RGBA</dt>
+                <dd class="discription">rgba(red, green, blue, alpha) | Alpha parameter is number between 0.0 (full transparent) to 1 (not transparent at all) | rgba(243, 165, 44, 0.7)</dd>
+            <dt class="head">4.HEX code</dt>
+                <dd class="discription">HEX value start from # | HEX values are between ff to 00 (similar 0-255) | #rrggbb (red, green, blue) | #ff0233 </dd>
+            <dt class="head">5.HSL</dt>
+                <dd class="discription">hsl(Hue, Saturation, Lightness) |  Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green and 240 is blue | Saturation is a percentage value. 0% means a shade of gray and 100% is the full color | Lightness is also a percentage. 0% is black, 50%is neither light or neither dark, 100% is white | hsl(0, 100%, 50%) </dd>
+            <dt class="head">6.HSLA</dt>
+                <dd class="discription">hsla(Hue, Saturation, Lightness, Alpha) | hsla(120, 80%, 50%, 0.8)</dd>
+        </dl>
+    </div>
+</body>
+</html>

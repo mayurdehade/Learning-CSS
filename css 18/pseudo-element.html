@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /*select only first element of paragraph*/
+        p::first-letter{
+            font-size: 30px;
+            color: royalblue;
+        }
+
+        /*first line*/
+        p::first-line{
+            font-style: italic;
+        }
+
+        /*Add content with use css after and before*/
+        h1::before{
+            content: "Before ";
+        }
+
+        h1::after{
+            content: " After";
+        }
+
+        ::selection{
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elements</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus excepturi ad, corrupti recusandae porro eveniet, harum in unde eligendi sit similique maxime repellendus. Tempore non eius similique, ab, rem delectus repellat facilis error eligendi sapiente beatae, ducimus et libero! Optio itaque quas dolores aliquid sunt voluptatem exercitationem nemo ratione aspernatur adipisci odit blanditiis soluta et incidunt quos quis cumque veniam iste, inventore sint a cum non tenetur? Voluptate fugiat ullam, reiciendis earum dolor laboriosam autem. Eius libero, officia exercitationem voluptas similique vitae aspernatur aliquid ipsa dolores nostrum quos, dolorum unde accusamus quam ad possimus nam nulla magnam deleniti? Atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa nihil, assumenda minima, incidunt inventore nisi numquam perferendis possimus maiores saepe recusandae itaque autem ullam nemo! Id corrupti quibusdam consequuntur.</p>
+</body>
+</html>

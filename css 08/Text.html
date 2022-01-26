@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling</title>
+    <style>
+        .header{
+            border: 2px solid sandybrown;
+            background-color: silver;
+            text-align: center;
+            color: rgb(223, 21, 88);
+        }
+        .text-align{
+            border: 2px dotted black;
+            text-align: right;
+        }
+        .dire{
+            border: 2px dotted burlywood;
+            /* text-align: center; */
+            direction: rtl;
+        }
+        .v-align{
+            display: inline-block;
+            /* zoom: 1.5; */
+            border: 2px dashed rgb(80, 76, 43);
+            height: 200px;
+            width: 400px;
+            vertical-align: bottom;
+        }
+        .text-d{
+            height: 50px;
+            border: solid black 1px;
+            text-decoration: underline overline;
+            text-align: center;
+            padding-top: 25px;
+        }
+        .text-transform{
+            border: 2px dotted brown;
+            height: 50px;
+            text-align: center;
+            padding-top: 25px;
+            text-transform: capitalize;
+        }
+        .text-m{
+            border: 2px dotted darkgoldenrod;
+            width: 250px;
+
+            line-height: 40px;
+            letter-spacing: 3px;
+            text-indent: 50px;
+            word-spacing: 10px;
+        }
+        .white-space{
+            border: darkgoldenrod 2px double;
+            white-space: pre;
+            height: 200px;
+        }
+        .word-wrap{
+            display: inline-block;
+            margin: 0 20px 0 20px;
+            border: 2px solid red;
+            text-transform: capitalize;
+            width: 100px;
+        }
+        .other{
+            word-wrap: break-word;
+        }
+        .shadow{
+            font-size: 40px;
+            font-family: sans-serif;
+            text-align: center;
+            text-shadow: 2px -5px 4px rgb(100, 98, 98);
+        }
+        .mode{
+            border: 2px solid black;
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">TEXT STYLING</h1>
+
+        <h3 class="text-align">1. text-align:justify; (left, right, center, justify)</h3>
+
+        <h3 class="dire">2. direction: rtl; (rtl, ltr)</h3>
+
+        <h3 class="v-align">3. vertical-align: bottom; (top, bottom)</h3>
+
+        <h3 class="text-d">4. text-decoration: underline overline;</h3>
+
+        <h3 class="text-transform">5. text-transform: capitalize;</h3>
+
+        <h3 class="text-m"><u>6. line-height, text-indent, letter-spacing, word-spacing</u>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem ipsa, distinctio consectetur neque sit non autem fugiat atque consequuntur.
+        </h3>
+
+        <h3 class="white-space">7. white-space: pre; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero odio accusantium placeat illo sed quibusdam esse corporis architecto</h3>
+<br>
+        <h3>8. word-wrap</h3>
+        <h3 class="word-wrap other">word-wrap: break-word; Thisistheveryverylongwordinthisparagraphforcheckword-wrapproperty</h3>
+        <h3 class="word-wrap">word-wrap: normal; Thisistheveryverylongwordinthisparagraphforcheckword-wrapproperty</h3>
+
+        <h2 class="shadow">9. text-shadow: 2px -5px 4px black;</h2>
+
+        <h3 class="mode">10. writing-mode: vertical-lr;</h3>
+    </div>
+</body>
+</html>

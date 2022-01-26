@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Propertys</title>
+        
+    <style>
+        *{
+            color: white;
+        }
+        .bg-color{
+            background-color: red;
+            text-align: center;
+        }
+
+        .bg-image{
+            background-image: url(../Images/back.png);
+            background-repeat: no-repeat;
+            height: 250px;
+            text-align: center;
+            background-position: center;
+            margin: auto;
+        }
+        .bg-image h1, .bg-image p{
+            margin: 0;
+        }
+
+        /*Background Position Properties
+        1. In word*/
+        .bg-position-word{
+            width: auto;
+            height: 300px;
+            border: 2px dashed red;
+            background-image: url(../Images/6.jpg);
+            background-position: top right;
+            background-size: 200px;
+            background-repeat: no-repeat;
+        }
+        /*2. In Pixels */
+        .bg-position-pixel{
+            width: auto;
+            height: 300px;
+            border: 2px dashed red;
+            background-image: url(../Images/6.jpg);
+            background-position: 100px 100px;
+            background-size: 200px;
+            background-repeat: no-repeat;
+        }
+        /*3. In Percentage */
+        .bg-position-percent{
+            width: auto;
+            height: 300px;
+            border: 2px dashed red;
+            background-image: url(../Images/6.jpg);
+            background-position: 50% 50%;
+            background-size: 200px;
+            background-repeat: no-repeat;
+        }
+
+        /*Background Size: pixel, percentage, cover, contein */
+        .bg-size{
+            background-image: url(../Images/7.jpg);
+            background-repeat: no-repeat;
+            height: 300px;
+            background-size: contain;
+            color: white;
+        }
+
+        /*Background Attachment*/
+        body{
+            background-image: url(../Images/3.jpg);
+            background-size: cover;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /*Multiple Background: color and image*/
+        .multi-back-color{
+            height: 300px;
+            border: 2px dashed red;
+            background: lightblue url(../Images/4.jpg);
+            background-size: 300px;
+            text-align: center;
+            background-repeat: no-repeat;
+        }
+
+        /*Multiple Background: two or more images */
+        .multi-back-image{
+            height: 300px;
+            border: 2px dashed red;
+            background-color: royalblue;
+            text-align: center;
+            background-image: url(../Images/4.jpg), url(../Images/8.jpg);
+            background-size: 300px;
+            background-position: left, right;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Background Properties</h1>
+    <!--Background Colour-->
+    <div class="bg-color">
+        <h1>1. Background Color Red</h1>
+    </div>
+    <br>
+
+    <!--Background Image-->
+    <div class="bg-image">
+        <h1>2. Background Image</h1>
+        <p>with use of the background property we apply image background to any text or container</p>
+    </div>
+    <br>
+
+    <!--Background Position 1.In world, 2.In pixels, 3.In percentage-->
+    <div class="bg-position-word">
+        <h1>3. Background Position - In Words</h1>
+    </div>
+    <div class="bg-position-pixel">
+        <h1>3. Background Position - In Pixels</h1>
+    </div>
+    <div class="bg-position-percent">
+        <h1>3. Background Position - In Percentage</h1>
+    </div>
+    <br>
+
+    <!-- Background Size: -->
+    <div class="bg-size">
+        <h1>4. Background Size - contain</h1>
+    </div>
+
+    <!--Background Attributes Shorthand-->
+    <div>
+        <h1>Shorthand Background Attributes</h1>
+        <pre style="font-size: 20px; color: turquoise; background:blue;">
+            selector{
+                background: red url(../abc.jpg) no-repeat fixed 50% 50%;
+            }
+        </pre>
+    </div>
+    <br>
+
+    <!--Multiple Background: color and image-->
+    <div class="multi-back-color">
+        <h1>Multiple Background: color and image</h1>
+    </div>
+    <br>
+
+    <!--Multiple Baclground: Multiple images-->
+    <div class="multi-back-image">
+        <h1>Multiple Background: Multiple images</h1>
+    </div>
+    <br>
+
+    <!--End-->
+    <h1 style="text-align: center; background-color: gold;">END</h1>
+</body>
+</html>
